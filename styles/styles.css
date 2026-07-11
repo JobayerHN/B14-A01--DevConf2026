@@ -1,0 +1,25 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 62.5%;
+}
+/*color*/
+:root {
+	--gray-color: rgba(87, 87, 87, 1);
+	--blue-color: rgba(37, 99, 235, 1);
+	--section-title-color: rgba(0, 1, 2, 1);
+	--speaker-card-title-color: rgba(13, 27, 42, 1);
+	--footer-text-color: rgba(255, 255, 255, 0.4);
+	--hr-color: rgba(229, 231, 235, 1);
+	--service-color: rgba(51, 51, 51, 1);
+}
+
+/*shared styles*/
+.inter-font {
+	font-family: "inter", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+}
