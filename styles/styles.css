@@ -291,4 +291,33 @@ html {
 	border-color: rgba(13, 27, 42, 1);
 	color: rgba(13, 27, 42, 1);
 }
+/*footer*/
+.footer {
+	background-color: rgba(13, 27, 42, 1);
+}
+.footer-content {
+	max-width: 1320px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 55px 0 70px;
+}
+.footer .footer-menu {
+	display: flex;
+	gap: 25px;
+}
 
+.footer-menu-item {
+	list-style: none;
+}
+.footer-item-link {
+	text-decoration: none;
+}
+
+.copyright, .footer-item-link {
+	color: rgba(255, 255, 255, 0.4);
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 2rem;
+}
