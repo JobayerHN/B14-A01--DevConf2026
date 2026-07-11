@@ -190,3 +190,105 @@ html {
 	line-height: 2.1rem;
 	padding-bottom: 25px;
 }
+/*Secure your spot*/
+
+.your-spot-text {
+	text-align: center;
+}
+.your-spot-title{
+	padding-bottom: 12px;
+}
+.your-spot-description {
+	color: var(--gray-color);
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 2.4rem;
+	padding-bottom: 48px;
+}
+
+.secure-your-spot {
+	padding-bottom: 80px;
+}
+.price-card-container {
+	max-width: 1320px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	gap: 25px;
+}
+.price-card{
+	border: 1px solid rgba(229, 231, 235, 1);
+	padding: 32px;
+	border-radius: 12px;
+}
+.package-name, .clint-number {
+	color: var(--gray-color);
+	font-size: 1.3rem;
+	font-weight: 600;
+	line-height: 1.9rem;
+	letter-spacing: .03rem;
+	padding-bottom: 8px;
+}
+.price {
+	color: var(--speaker-card-title-color);
+	font-size: 4.4rem;
+	font-weight: 700;
+	line-height: 4.4rem;
+	padding-bottom: 4px;
+}
+.clint-number {
+	font-weight: 400;
+	padding-bottom: 20px;
+}
+.price-card-content hr {
+	border: none;
+	height: 1px;
+	background-color: var(--hr-color);
+	margin-bottom: 20px;
+
+}
+.service-collection {
+	padding-left: 10px;
+	padding-bottom: 20px;
+}
+.service-collection .service {
+	color: var(--service-color);
+	font-size: 1.4rem;
+	font-weight: 400;
+	line-height: 2.1rem;
+}
+.service-collection li::marker {
+	color: var(--blue-color);
+}
+
+.dark-card {
+	background-color: rgba(13, 27, 42, 1);
+}
+.dark-card  .package-name {
+	color: rgba(147, 197, 253, 1);
+}
+.dark-card .price {
+	color: #FFFFFF;
+}
+.dark-card .clint-number {
+	color: rgba(255, 255, 255, 0.5);
+}
+.dark-card hr {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+.dark-card .service {
+	color: rgba(255, 255, 255, 0.8)
+}
+.get-pro-btn {
+	padding: 11px 127px;
+	color: #FFFFFF;
+	font-size: 1.4rem;
+	font-weight: 600;
+	line-height: 2.1rem;
+}
+
+.contact-Us-btn {
+	border-color: rgba(13, 27, 42, 1);
+	color: rgba(13, 27, 42, 1);
+}
+
