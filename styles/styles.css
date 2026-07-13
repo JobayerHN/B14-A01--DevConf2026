@@ -10,11 +10,11 @@ html {
 :root {
 	--gray-color: rgba(87, 87, 87, 1);
 	--blue-color: rgba(37, 99, 235, 1);
-	--section-title-color: rgba(0, 1, 2, 1);
+	--section-heading-color: rgba(0, 1, 2, 1);
 	--speaker-card-title-color: rgba(13, 27, 42, 1);
 	--footer-text-color: rgba(255, 255, 255, 0.4);
 	--hr-color: rgba(229, 231, 235, 1);
-	--service-color: rgba(51, 51, 51, 1);
+	--text-color: rgba(51, 51, 51, 1);
 }
 
 /*shared styles*/
@@ -28,6 +28,8 @@ html {
 	border-radius: 10px;
 	border: none;
 	cursor: pointer;
+	color: #ffffff;
+	line-height: 2.4rem;
 }
 .btn-secondary {
 	padding: 12px 106px;
@@ -40,12 +42,19 @@ html {
 	font-weight: 600;
 	line-height: 2.1rem;
 }
-.section-title {
+.section-heading {
 	text-align: center;
-	color: var(--section-title-color);
+	color: var(--section-heading-color);
 	font-size: 5.6rem;
 	font-weight: 700;
 	line-height: 6.5rem;
+}
+
+.text {
+	color: var(--text-color);
+	font-size: 1.4rem;
+	font-weight: 400;
+	line-height: 2.1rem;
 }
 /*other styles*/
 
@@ -82,16 +91,21 @@ html {
 
 .nav-content .nav-btn {
 	padding: 12px 40px;
-	color: #FFFFFF;
 	font-size: 1.6rem;
 	font-weight: 700;
-	line-height: 2.4rem;
 }
 
 /*Banner*/
 
 .banner {
-	background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)) , url("../assets/banner.jpg") no-repeat center / cover;
+	background:
+		linear-gradient(
+			180deg,
+			rgba(0, 0, 0, 0.95) 0%,
+			rgba(15, 10, 30, 0.65) 60%,
+			rgba(0, 0, 0, 0.8) 100%
+		),
+		url("../assets/banner.jpg") no-repeat center / cover;
 }
 .banner-content {
 	padding-top: 135px;
@@ -105,7 +119,7 @@ html {
 .banner-title {
 	font-size: 8rem;
 	font-weight: 700;
-	color: #FFFFFF;
+	color: #ffffff;
 	padding-bottom: 1.6rem;
 	letter-spacing: -3.2px;
 	line-height: 8rem;
@@ -121,17 +135,15 @@ html {
 	max-width: 830px;
 	line-height: 2.4rem;
 	margin: 0 auto;
-	letter-spacing: .5px;
+	letter-spacing: 0.5px;
 	padding-bottom: 278px;
 }
 
 .banner-btn {
 	padding: 25px 62px;
-	color: #FFFFFF;
+	color: #ffffff;
 	font-size: 2.4rem;
 	font-weight: 700;
-	cursor: pointer;
-	line-height: 2.4rem;
 }
 
 /*Meet the Speakers*/
@@ -141,7 +153,7 @@ html {
 	padding-bottom: 170px;
 }
 
-.section-content .section-title {
+.section-content .section-heading {
 	padding-bottom: 60px;
 }
 
@@ -161,7 +173,6 @@ html {
 .speaker-card-text {
 	padding-top: 25px;
 	padding-left: 25px;
-
 }
 .speaker-card-image {
 	width: 100%;
@@ -172,7 +183,7 @@ html {
 	color: var(--blue-color);
 	font-size: 1.2rem;
 	font-weight: 600;
-	padding-bottom: .8rem;
+	padding-bottom: 0.8rem;
 	text-transform: uppercase;
 }
 .speaker-name {
@@ -180,7 +191,7 @@ html {
 	font-size: 2rem;
 	font-weight: 700;
 	line-height: 2.7rem;
-	padding-bottom: .8rem;
+	padding-bottom: 0.8rem;
 }
 
 .speaker-position {
@@ -190,15 +201,16 @@ html {
 	line-height: 2.1rem;
 	padding-bottom: 25px;
 }
+
 /*Secure your spot*/
 
 .your-spot-text {
 	text-align: center;
 }
-.your-spot-title{
+.your-spot-title {
 	padding-bottom: 12px;
 }
-.your-spot-description {
+.section-sub-heading {
 	color: var(--gray-color);
 	font-size: 1.6rem;
 	font-weight: 400;
@@ -216,17 +228,18 @@ html {
 	justify-content: center;
 	gap: 25px;
 }
-.price-card{
+.price-card {
 	border: 1px solid rgba(229, 231, 235, 1);
 	padding: 32px;
 	border-radius: 12px;
 }
-.package-name, .clint-number {
+.package-name,
+.clint-number {
 	color: var(--gray-color);
 	font-size: 1.3rem;
 	font-weight: 600;
 	line-height: 1.9rem;
-	letter-spacing: .03rem;
+	letter-spacing: 0.03rem;
 	padding-bottom: 8px;
 }
 .price {
@@ -245,17 +258,10 @@ html {
 	height: 1px;
 	background-color: var(--hr-color);
 	margin-bottom: 20px;
-
 }
 .service-collection {
 	padding-left: 10px;
 	padding-bottom: 20px;
-}
-.service-collection .service {
-	color: var(--service-color);
-	font-size: 1.4rem;
-	font-weight: 400;
-	line-height: 2.1rem;
 }
 .service-collection li::marker {
 	color: var(--blue-color);
@@ -264,11 +270,11 @@ html {
 .dark-card {
 	background-color: rgba(13, 27, 42, 1);
 }
-.dark-card  .package-name {
+.dark-card .package-name {
 	color: rgba(147, 197, 253, 1);
 }
 .dark-card .price {
-	color: #FFFFFF;
+	color: #ffffff;
 }
 .dark-card .clint-number {
 	color: rgba(255, 255, 255, 0.5);
@@ -276,21 +282,73 @@ html {
 .dark-card hr {
 	background-color: rgba(255, 255, 255, 0.1);
 }
-.dark-card .service {
-	color: rgba(255, 255, 255, 0.8)
+.dark-card .text {
+	color: rgba(255, 255, 255, 0.8);
 }
 .get-pro-btn {
 	padding: 11px 127px;
-	color: #FFFFFF;
 	font-size: 1.4rem;
 	font-weight: 600;
-	line-height: 2.1rem;
 }
 
 .contact-Us-btn {
 	border-color: rgba(13, 27, 42, 1);
 	color: rgba(13, 27, 42, 1);
 }
+
+/* =========================
+   CTA Section
+========================= */
+
+.cta-section {
+	padding: 100px 20px;
+	background: rgba(37, 99, 235, 0.05);
+}
+
+.cta-content {
+	max-width: 760px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.cta-tag {
+	display: inline-block;
+	padding: 8px 18px;
+	margin-bottom: 24px;
+
+	background: rgba(37, 99, 235, 0.1);
+	color: var(--blue-color);
+
+	font-size: 1.4rem;
+	font-weight: 600;
+
+	border-radius: 999px;
+}
+
+.cta-description {
+	max-width: 620px;
+	margin: 0 auto 48px;
+	padding-bottom: 0;
+}
+
+.cta-btn {
+	padding: 18px 42px;
+
+	font-size: 1.6rem;
+	font-weight: 600;
+
+	transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 12px 30px rgba(37, 99, 235, 0.25);
+}
+
+.cta-btn:active {
+	transform: translateY(0);
+}
+
 /*footer*/
 .footer {
 	background-color: rgba(13, 27, 42, 1);
@@ -298,10 +356,51 @@ html {
 .footer-content {
 	max-width: 1320px;
 	margin: 0 auto;
+	padding: 55px 0 70px;
+}
+.footer-logo-and-social-media-container {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 55px 0 70px;
+	padding-bottom: 40px;
+}
+
+.social-media-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+}
+.social-media-text {
+	color: rgba(255, 255, 255, 0.8);
+	list-style: none;
+	font-size: 1.4rem;
+	font-weight: 400;
+	letter-spacing: 0.1rem;
+	line-height: 2rem;
+}
+.link-container {
+	list-style: none;
+}
+.link {
+	text-decoration: none;
+	display: inline-block;
+	padding: 5px;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 1);
+	font-size: 1.6rem;
+	color: inherit;
+}
+.footer-divider {
+	border: none;
+	height: 2px;
+	background-color: rgba(255, 255, 255, 0.1);
+}
+.copyrights-and-term-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 40px;
 }
 .footer .footer-menu {
 	display: flex;
@@ -315,9 +414,7 @@ html {
 	text-decoration: none;
 }
 
-.copyright, .footer-item-link {
+.copyright,
+.footer-item-link {
 	color: rgba(255, 255, 255, 0.4);
-	font-size: 1.6rem;
-	font-weight: 400;
-	line-height: 2rem;
 }
